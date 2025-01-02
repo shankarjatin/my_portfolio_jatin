@@ -25,6 +25,14 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  
+    const [logoUrl, setLogoUrl] = useState('');
+  
+    useEffect(() => {
+      // Simulating fetching the dynamic logo URL from an API or database
+      setLogoUrl('https://i.ibb.co/s3kcb7X/jatin-profile.jpg'); // Replace with your dynamic link
+    }, []);
+
   return (
     <nav
       className={`${
@@ -42,10 +50,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+          <img src={logoUrl} alt='logo' className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Adrian &nbsp;
-            <span className='sm:block hidden'> | JavaScript Mastery</span>
+            Jatin  &nbsp;
+            <span className='sm:block hidden'> Shankar Srivastava</span>
           </p>
         </Link>
 
