@@ -243,7 +243,7 @@ const projects = [
       },
     ],
     image: interneex,
-    source_code_link: "https://interneex.com/",
+    source_code_link: "https://interneex-jatin.vercel.app/",
   },
   {
     name: "Trip Booking",
