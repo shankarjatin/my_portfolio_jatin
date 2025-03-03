@@ -222,7 +222,7 @@ const projects = [
       },
     ],
     image: safarnama,
-    source_code_link: "https://thesafarnamatales.in/",
+    source_code_link: "https://safarnama4u.vercel.app/",
   },
   {
     name: "Edtech website",
